@@ -8,7 +8,8 @@ export default {
         'knockout-light-brown': '#ECDBBD'
       },
       fontFamily: {
-        Pridi: ['Pridi', 'serif']
+        Pridi: ['Pridi', 'serif'],
+        QuattrocentoSans: ['Quattrocento Sans', 'serif'] 
       }
     },
   },
