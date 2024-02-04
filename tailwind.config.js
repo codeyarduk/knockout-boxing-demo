@@ -8,9 +8,9 @@ export default {
         "knockout-medium-dark-brown": "#1C1407",
       },
       fontFamily: {
-        Pridi: ["Pridi", "serif"],
-        QuattrocentoSans: ["Quattrocento Sans", "serif"],
-      },
+        Pridi: ['Pridi', 'serif'],
+        QuattrocentoSans: ['Quattrocento Sans', 'serif'] 
+      }
     },
   },
   plugins: [],
