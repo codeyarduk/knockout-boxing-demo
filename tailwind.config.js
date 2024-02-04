@@ -5,6 +5,7 @@ export default {
       colors: {
         "knockout-brown": "#1D1107",
         "knockout-light-brown": "#ECDBBD",
+        "knockout-lighter-brown": "#582B0B",
         "knockout-medium-dark-brown": "#1C1407",
       },
       fontFamily: {
