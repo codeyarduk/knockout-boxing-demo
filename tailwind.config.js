@@ -11,6 +11,9 @@ export default {
       fontFamily: {
         Pridi: ['Pridi', 'serif'],
         QuattrocentoSans: ['Quattrocento Sans', 'serif'] 
+      },
+      screens: {
+        'medium-wide': { 'raw': '(min-width: 1024x)' }
       }
     },
   },
