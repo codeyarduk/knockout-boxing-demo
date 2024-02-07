@@ -21,9 +21,25 @@
             >Knockout Boxing</a
           >
         </div>
-        <div>
-          <img src="./public/icons/brown-burger-menu.svg" />
+        <div onClick="toggleDropdownMenu()">
+            <img src="./public/icons/brown-burger-menu.svg" class="cursor-pointer menu-icon"/>
         </div>
+        <div class="bg-white shadow-md rounded-md fixed hidden left-0 top-12" id="dropdown">
+          <ul class="flex justify-between flex-col text-black p-4 h-96 w-72 text-center w-dvw">
+            <li>About Us</li>
+            <li>Our Facilites</li>
+            <li>Reviews</li>
+            <li>Packages</li>
+            <li>FAQ's</li>
+            <li>Contact Us</li>
+          </ul>
+        <div/>
+        <script>
+          function toggleDropdownMenu () {
+            let dropdownButton = document.querySelector('#dropdown');
+            dropdown.classList.toggle('hidden');
+          }
+        </script>
       </div>
     </header>
     <!-- Hero Section -->
