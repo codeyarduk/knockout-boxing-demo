@@ -27,25 +27,15 @@
       </div>
     </header>
     <!-- Hero Section -->
-    <div
-      class="asdfLLLLLLLLLLLLLLLLLLLLLLLLL flex flex-col md:flex-row border-2 border-red-600 md:h-[594px] md:justify-between"
-    >
-      <div
-        class="flex justify-center w-full pt-28 pb-10 bg-knockout-light-brown md:bg-white border-2 border-black md:hidden"
-      >
-        <img
-          class="w-48"
-          src="./public/favicon.png"
-          alt="Knockout Boxing Logo"
-        />
-      </div>
+    <div class="flex justify-center w-full pt-28 pb-10 bg-knockout-light-brown">
+      <img class="w-48" src="./public/favicon.png" alt="Knockout Boxing Logo" />
     </div>
       <!-- Unleash Your Inner Fighter Section -->
       <div
-        class="flex flex-col justify-center pt-16 items-center text-center tracking-wide border-2 border-black md:pt-64"
+        class="flex flex-col justify-center pt-16 items-center text-center tracking-wide md:pt-64"
       >
         <h2
-          class="font-Pridi font-semibold px-10 text-[2.3rem] leading-[2.6rem] text-knockout-brown max-w-2xl lll md:text-[3.5rem] md:leading-[3.5rem] md:text-left"
+          class="font-Pridi font-semibold px-10 text-[2.3rem] leading-[2.6rem] text-knockout-brown max-w-2xl lll lg:text-[3.5rem] lg:leading-[3.5rem] lg:text-left"
         >
           Unleash your inner fighter and conquer the ring
         </h2>
@@ -62,15 +52,7 @@
           Join now
         </button>
       </div>
-      <div
-        class="md:flex justify-center bg-knockout-light-brown md:bg-white border-2 border-black hidden bg-[url('/public/images/part-of-circle.png')] md:w-[594px] md:h-[594px] hover:bg-bottom"
-      >
-        <img
-          class="w-48 md:hidden"
-          src="./public/favicon.png"
-          alt="Knockout Boxing Logo"
-        />
-      </div>
+
     
     <!-- I've Never Boxed Before Section -->
     <div class="flex flex-col justify-center items-center mt-[120px] px-7">
@@ -101,7 +83,7 @@
           At Knockout boxing club we offer access to...
         </p>
       </div>
-      <div class="flex flex-col justify-center items-center md:flex-row">
+      <div class="flex flex-col justify-center items-center lg:flex-row">
         <div class="flex flex-row mb-2 md:pt-2">
           <div
             class="w-40 h-40 xl:h-52 xl:w-52 flex items-center justify-center mx-1 xl:mx-3 rounded-md bg-[url('/public/images/bags.png')] bg-contain"
@@ -135,7 +117,7 @@
           </div>
         </div>
         <div
-          class="w-[328px] md:w-40 mx-1 xl:mx-3 xl:h-52 xl:w-52 h-40 flex items-center justify-center rounded-md bg-[url('/public/images/shower.png')] md:bg-[url('/public/images/shower-desktop.png')] bg-contain bg-no-repeat"
+          class="w-[328px] lg:w-40 mx-1 xl:mx-3 xl:h-52 xl:w-52 h-40 flex items-center justify-center rounded-md bg-[url('/public/images/shower.png')] lg:bg-[url('/public/images/shower-desktop.png')] lg:bg-contain lg:bg-no-repeat"
         >
           <p class="font-QuattrocentoSans text-white text-lg font-bold">
             Showers
@@ -150,63 +132,74 @@
       >
         We Provide...
       </p>
-      <div class="xl:flex-row xl:flex xl:max-w-7xln">
-        <div class="md:flex md:flex-row md:mb-4">
-          <div class="xl:max-w-64 xl:px-2">
+
+      <!-- First Parent Div -->
+
+      <div class="md:w-full md:max-w-[848px] md:flex justify-between items-center flex-col xl:flex-row xl:max-w-[1136px] xl:items-start">
+        <div class="md:flex md:flex-row md:justify-between md:w-full md:max-w-[752px] xl:max-w-[568px] xl:justify-center">
+          <!-- Item 1 -->
+          <div class="flex justify-center flex-col items-center xl:items-start xl:justify-normal ">
             <p
               class="text-xl font-QuattrocentoSans text-center xl:text-left font-bold"
             >
               Experienced Coaches
             </p>
             <p
-              class="text-center xl:text-left font-QuattrocentoSans mt-2 mb-7 max-w-md"
+              class="text-center xl:text-left font-QuattrocentoSans mt-2 mb-7 max-w-[336px] xl:max-w-[272px]"
             >
               Our team of certified trainers brings years of professional
               experience to help you master the art of boxing.
             </p>
           </div>
-          <div class="xl:max-w-64 xl:px-2">
+          <!-- Item 2 -->
+          <div class="flex justify-center flex-col items-center xl:items-start xl:justify-normal">
             <p
               class="text-xl xl:text-left font-QuattrocentoSans text-center font-bold"
             >
               State-of-the-Art Facilities
             </p>
             <p
-              class="text-center xl:text-left font-QuattrocentoSans mt-2 mb-7 max-w-md"
+              class="text-center xl:text-left font-QuattrocentoSans mt-2 mb-7 max-w-[336px] xl:max-w-[272px]"
             >
               Train in our fully equipped gym with top-notch equipment, giving
               you the best possible training experience.
             </p>
           </div>
         </div>
-        <div class="md:flex md:flex-row">
-          <div class="xl:max-w-64 xl:px-2">
+
+        <!-- Second Parent Div -->
+
+        <div class="md:flex md:flex-row md:justify-between md:w-full md:max-w-[752px] xl:max-w-[568px] xl:justify-between">
+          <!-- Item 3 -->
+          <div class="flex justify-center flex-col items-center xl:items-start xl:justify-normal">
             <p
               class="text-xl xl:text-left font-QuattrocentoSans text-center font-bold"
             >
               Supportive Community
             </p>
             <p
-              class="text-center xl:text-left font-QuattrocentoSans mt-2 mb-7 max-w-md"
+              class="text-center xl:text-left font-QuattrocentoSans mt-2 mb-7 max-w-[336px] xl:max-w-[272px]"
             >
               Join a passionate community of boxers who motivate and encourage
               each other to achieve greatness.
             </p>
           </div>
-          <div class="xl:max-w-64 xl:px-2">
+          <!-- Item 4 -->
+          <div class="flex justify-center flex-col items-center xl:items-start xl:justify-normal">
             <p
               class="text-xl font-QuattrocentoSans text-center xl:text-left font-bold"
             >
               Personalised Training
             </p>
             <p
-              class="text-center xl:text-left font-QuattrocentoSans mt-2 mb-7 max-w-md"
+              class="text-center xl:text-left font-QuattrocentoSans mt-2 mb-7 max-w-[336px] xl:max-w-[272px] "
             >
               Whether you're a beginner or a seasoned pro, we tailor our
               training programs to meet your individual needs and goals.
             </p>
           </div>
         </div>
+
       </div>
     </div>
     <div class="flex flex-col md:flex-row md:justify-between max-w-6xl mx-auto">
@@ -229,7 +222,7 @@
         </p>
 
         <p
-          class="md:ml-16 pt-4 leading-[1.35rem] md:text-[18px] md:font-normal md:leading-[21.6px] font-light text-knockout-medium-dark-brown max-w-2xl text-center md:text-left"
+          class="md:ml-16 pt-4 font-QuattrocentoSans leading-[1.35rem] md:text-[18px] md:font-normal md:leading-[21.6px] font-light text-knockout-medium-dark-brown max-w-2xl text-center md:text-left"
         >
           Knockout Boxing is more than just a gym; we're a family. Our passion
           for boxing and fitness drives us to provide an exceptional training
