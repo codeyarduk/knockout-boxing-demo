@@ -135,7 +135,7 @@
 
       <!-- First Parent Div -->
 
-      <div class="md:w-full md:max-w-[848px] md:flex justify-between items-center flex-col xl:flex-row xl:max-w-[1136px] xl:items-start">
+      <div class="md:w-full md:max-w-[848px] md:flex justify-between items-center flex-col xl:flex-row xl:max-w-[1136px] xl:items-start ">
         <div class="md:flex md:flex-row md:justify-between md:w-full md:max-w-[752px] xl:max-w-[568px] xl:justify-center">
           <!-- Item 1 -->
           <div class="flex justify-center flex-col items-center xl:items-start xl:justify-normal ">
@@ -202,59 +202,65 @@
 
       </div>
     </div>
-    <div class="flex flex-col md:flex-row md:justify-between max-w-6xl mx-auto">
-      <!-- Guy Punching Bag Image Section -->
-      <div class="flex flex-col justify-center items-center mt-20 md:hidden">
-        <img
-          src="./public/images/man-hitting-bag.png"
-          alt="Man hitting heavy bag with boxing glove"
-        />
-      </div>
+    <!-- About Us Section -->
+    <div class="md:flex md:justify-center flex justify-center  md:mt-20">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-center md:w-full md:max-w-[848px] mx-7  xl:mr-[300px]">
+        <!-- Guy Punching Bag Image Section -->
+        <div class="flex flex-col justify-center items-center mt-20 md:hidden">
+          <img
+            src="./public/images/man-hitting-bag.png"
+            alt="Man hitting heavy bag with boxing glove"
+          />
+        </div>
 
-      <!-- About Us Section -->
-      <div
-        class="flex flex-col justify-center md:items-start items-center mt-20 md:text-left max-w-md xl:max-w-[1136px]"
-      >
-        <p
-          class="text-center font-Pridi font-semibold text-[28px] leading-7 tracking-wider md:ml-16"
+        <div
+          class="flex flex-col justify-center md:items-start items-center mt-20 md:text-left max-w-md xl:max-w-[1136px] md:mr-10  md:mt-0"
         >
-          About us
-        </p>
+          <p
+            class="text-center font-Pridi font-semibold text-[28px] leading-7 tracking-wider"
+          >
+            About us
+          </p>
 
-        <p
-          class="md:ml-16 pt-4 font-QuattrocentoSans leading-[1.35rem] md:text-[18px] md:font-normal md:leading-[21.6px] font-light text-knockout-medium-dark-brown max-w-2xl text-center md:text-left"
-        >
-          Knockout Boxing is more than just a gym; we're a family. Our passion
-          for boxing and fitness drives us to provide an exceptional training
-          environment where athletes of all levels can thrive. With years of
-          experience in the boxing industry, our coaches are dedicated to
-          helping you unleash your full potential. Join us, step into the ring,
-          and transform yourself into a formidable force. Together, we'll create
-          the champion within you.
-        </p>
-        <button
-          class="mt-5 py-4 px-32 md:ml-16 font-normal text-white bg-[#582B0B] rounded-lg leading-4 font-test font-QuattrocentoSans"
-        >
-          Join now
-        </button>
-      </div>
-      <!-- Guy Punching Bag Image Section -->
+          <p
+            class=" pt-4 font-QuattrocentoSans leading-[1.35rem] md:text-[18px] md:font-normal md:max-w-[384px] md:leading-[21.6px] font-light text-knockout-medium-dark-brown xl:max-w-2xl text-center md:text-left xl:w-[528px]"
+          >
+            Knockout Boxing is more than just a gym; we're a family. Our passion
+            for boxing and fitness drives us to provide an exceptional training
+            environment where athletes of all levels can thrive. With years of
+            experience in the boxing industry, our coaches are dedicated to
+            helping you unleash your full potential. Join us, step into the ring,
+            and transform yourself into a formidable force. Together, we'll create
+            the champion within you.
+          </p>
+          <button
+            class="mt-5 py-4 px-32 font-normal text-white bg-[#582B0B] rounded-lg leading-4 font-test font-QuattrocentoSans"
+          >
+            Join now
+          </button>
+        </div>
+        <!-- Guy Punching Bag Image Section -->
+        <div class="hidden md:block xl:hidden ">
+          <img
+            src="./public/images/man-hitting-bag.png"
+            alt="Man hitting heavy bag with boxing glove"
+            class="min-w-[384px] w-[384px] h-[384px] min-h-[384px]"
+          />
+        </div>
+          <div class="hidden xl:block  ">
+            <img
+              src="./public/images/man-hitting-bag-desktop.png"
+              alt="Man hitting heavy bag with boxing glove"
+              class="min-w-[528px] w-[528px] h-[427px] min-h-[427px] "
+          />
+        </div>
 
-      <div
-        class="hidden flex-col justify-center items-center mt-20 md:flex px-16"
-      >
-        <img
-          class="md:min-w-80 md:w-96 xl:w-[32rem] xl:hidden"
-          src="./public/images/man-hitting-bag.png"
-          alt="Man hitting heavy bag with boxing glove"
-        />
-        <img
-          class="md:min-w-80 md:w-96 xl:w-[33rem] hidden xl:flex"
-          src="./public/images/man-hitting-bag-desktop.png"
-          alt="Man hitting heavy bag with boxing glove"
-        />
       </div>
     </div>
+  </div>
+
+      
+
     <!-- What Others Have To Say Section -->
     <div class="flex flex-col justify-center items-center mt-[120px] px-7">
       <p
@@ -328,7 +334,7 @@
             <p class="text-[18px] font-QuattrocentoSans text-center font-bold xl:max-w-lg xl:w-full xl:text-start">
               Do I need boxing experience to join?
             </p>
-            <p class="text-center font-QuattrocentoSans mb-12 max-w-md md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
+            <p class="text-center font-QuattrocentoSans mb-12 max-w-[336px] md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
               No experience needed! Our gym caters to beginners and advanced members
               alike.
             </p>
@@ -338,7 +344,7 @@
             <p class="text-[18px] font-QuattrocentoSans text-center font-bold xl:max-w-lg xl:w-full xl:text-start">
               What should I bring to my first class?
             </p>
-            <p class="text-center font-QuattrocentoSans mb-12 max-w-md md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
+            <p class="text-center font-QuattrocentoSans mb-12 max-w-[336px] md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
               Wear comfy workout clothes and sneakers, bring water, gloves and wraps
               are available or for purchase.
             </p>
@@ -349,7 +355,7 @@
             <p class="text-[18px] font-QuattrocentoSans text-center font-bold xl:max-w-lg xl:w-full xl:text-start">
               What should I bring to my first class?
             </p>
-            <p class="text-center font-QuattrocentoSans mb-12 max-w-md md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
+            <p class="text-center font-QuattrocentoSans mb-12 max-w-[336px] md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
               Wear comfy workout clothes and sneakers, bring water, gloves and wraps
               are available or for purchase.
             </p>
@@ -358,7 +364,7 @@
             <p class="text-[18px] font-QuattrocentoSans text-center font-bold xl:max-w-lg xl:w-full xl:text-start">
               Is there an age limit?
             </p>
-            <p class="text-center font-QuattrocentoSans mb-12 max-w-md md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
+            <p class="text-center font-QuattrocentoSans mb-12 max-w-[336px] md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
               All ages are welcome; we have programs for kids, teens, and adults.
             </p>
           </div>
@@ -368,7 +374,7 @@
             <p class="text-[18px] font-QuattrocentoSans text-center font-bold md:w-72 xl:max-w-lg xl:w-full xl:text-start">
               Can I try a class before becoming a member?
             </p>
-            <p class="text-center font-QuattrocentoSans mb-12 max-w-md md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
+            <p class="text-center font-QuattrocentoSans mb-12 max-w-[336px]md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
               Yes, we offer trial classes for a small fee.
             </p>
           </div>
@@ -376,7 +382,7 @@
             <p class="text-[18px] font-QuattrocentoSans text-center font-bold xl:max-w-lg xl:w-full xl:text-start">
               How do I sign up?
             </p>
-            <p class="text-center font-QuattrocentoSans mb-12 max-w-md md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-0">
+            <p class="text-center font-QuattrocentoSans mb-12 max-w-[336px] md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-0">
               Contact us to book a visit or call where you can join the gym.
             </p>
           </div>
