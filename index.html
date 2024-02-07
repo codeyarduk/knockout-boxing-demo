@@ -8,10 +8,10 @@
     <link rel="icon" type="image/svg+xml" href="/public/favicon.png" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body id="top-of-page">
+  <body id="top-of-page" class="overflow-x-hidden h-full max-h-full">
     <!-- Header Section -->
     <header
-      class="flex flex-row justify-center items-center bg-white py-6 px-7 fixed w-full"
+      class="flex flex-row justify-center items-center bg-white py-6 px-7 fixed w-full z-10"
     >
       <div class="flex flex-row justify-between items-center w-full">
         <div>
@@ -27,31 +27,39 @@
       </div>
     </header>
     <!-- Hero Section -->
-    <div class="flex justify-center w-full pt-28 pb-10 bg-knockout-light-brown">
+    <div class="w-full border h-10"></div>
+    <div class="flex justify-center w-full pt-28 pb-10 bg-knockout-light-brown lg:hidden">
       <img class="w-48" src="./public/favicon.png" alt="Knockout Boxing Logo" />
     </div>
-      <!-- Unleash Your Inner Fighter Section -->
-      <div
-        class="flex flex-col justify-center pt-16 items-center text-center tracking-wide md:pt-64"
-      >
-        <h2
-          class="font-Pridi font-semibold px-10 text-[2.3rem] leading-[2.6rem] text-knockout-brown max-w-2xl lll lg:text-[3.5rem] lg:leading-[3.5rem] lg:text-left"
+    <!-- Unleash Your Inner Fighter Section -->
+    <div class="lg:flex lg:justify-center lg:items-center">
+      <div class="lg:flex border-[10px]">
+        <div
+          class="flex flex-col justify-center pt-16 items-center text-center tracking-wide lg:pt-64 lg:justify-start lg:items-start "
         >
-          Unleash your inner fighter and conquer the ring
-        </h2>
-        <p
-          class="px-8 pt-4 leading-[1.35rem] font-normal text-knockout-medium-dark-brown max-w-2xl"
-        >
-          <span class="font-bold">Welcome to Knockout Boxing!</span>
-          We provide top-notch training, world-class equipment, and a supportive
-          community to help you achieve your boxing goals.
-        </p>
-        <button
-          class="mt-12 py-4 px-32 font-normal text-white bg-knockout-lighter-brown rounded-lg leading-4 font-test font-QuattrocentoSans"
-        >
-          Join now
-        </button>
+          <h2
+            class="font-Pridi font-semibold  text-[2.3rem] leading-[2.6rem] text-knockout-brown max-w-2xl lg:text-[3.5rem] lg:leading-[3.5rem] lg:text-start"
+          >
+            Unleash your inner fighter and conquer the ring
+          </h2>
+          <p
+            class="pt-4 leading-[1.35rem] font-normal text-knockout-medium-dark-brown max-w-2xl lg:text-left"
+          >
+            <span class="font-bold">Welcome to Knockout Boxing!</span>
+            We provide top-notch training, world-class equipment, and a supportive
+            community to help you achieve your boxing goals.
+          </p>
+          <button
+            class="mt-12 py-4 px-32 font-normal text-white bg-knockout-lighter-brown rounded-lg leading-4 font-test font-QuattrocentoSans"
+          >
+            Join now
+          </button>
+        </div>
+        <div class="border-[6px] w-[384px]">
+          <img src="./public/images/hero-circle-medium.png" class="pl-0 hidden absolute lg:block float-right z-1 min-w-[686px]">
+        </div>
       </div>
+    </div>
 
     
     <!-- I've Never Boxed Before Section -->
