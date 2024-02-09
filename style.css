@@ -1,6 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pridi:wght@200;300;400;500;600;700&display=swap');
 
+
+/* @font-face {
+    font-family: 'Pridi';
+    src: url('./public/fonts/Pridi/Pridi-Regular.ttf');
+    src: url('./public/fonts/Pridi/Pridi-Bold.ttf');
+    src: url('./public/fonts/Pridi/Pridi-ExtraLight.ttf');
+    src: url('./public/fonts/Pridi/Pridi-Light.ttf');
+    src: url('./public/fonts/Pridi/Pridi-Medium.ttf');
+    src: url('./public/fonts/Pridi/Pridi-SemiBold.ttf');
+
+}
+
+@font-face {
+    font-family: 'Quattrocento Sans';
+    src: url('./public/fonts/Quattrocento_Sans/QuattrocentoSans-Regular.ttf');
+    src: url('./public/fonts/Quattrocento_Sans/QuattrocentoSans-Bold.ttf');
+
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
