@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="overflow-x-hidden">
+<html lang="en" class="overflow-x-hidden scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
   <div class="overflow-x-hidden relative">
     <!-- Header Section -->
     <header
-      class="flex flex-row justify-center items-center bg-white py-6 px-7 fixed w-full z-10"
+      class="flex flex-row justify-center items-center bg-white py-6 px-7 fixed w-full z-10 xl:py-9"
     >
       <div class="flex flex-row justify-between items-center w-full md:max-w-[848px] xl:max-w-[1136px]">
         <div>
@@ -22,19 +22,19 @@
             >Knockout Boxing</a
           >
         </div>
-        <div onClick="toggleDropdownMenu()">
-            <img src="./public/icons/brown-burger-menu.svg" class="cursor-pointer menu-icon"/>
+        <div onClick="toggleDropdownMenu()" class="xl:hidden">
+            <img src="./public/icons/brown-burger-menu.svg" class="cursor-pointer menu-icon xl:hidden"/>
         </div>
-        <div class="bg-white shadow-md rounded-md fixed hidden left-0 top-12" id="dropdown">
-          <ul class="flex justify-between flex-col text-black p-4 h-96 w-72 text-center w-dvw">
-            <li>About Us</li>
-            <li>Our Facilites</li>
-            <li>Reviews</li>
-            <li>Packages</li>
-            <li>FAQ's</li>
-            <li>Contact Us</li>
+        <div class="bg-white shadow-md rounded-md fixed hidden left-0 top-12 xl:flex xl:bg-transparent xl:shadow-none xl:top-[initial] xl:left-[initial] xl:relative" id="dropdown">
+          <ul class="flex justify-between flex-col text-black p-4 h-96 text-center w-dvw xl:flex-row xl:h-[initial] xl:p-0 xl:w-[635px] xl:text-[18px] font-QuattrocentoSans">
+            <li><a onClick="toggleDropdownMenu()" class="cursor-pointer menu-icon" href="#about-us">About Us</a></li>
+            <li><a onClick="toggleDropdownMenu()" class="cursor-pointer menu-icon" href="#our-facilities">Our Facilities</a></li>
+            <li><a onClick="toggleDropdownMenu()" class="cursor-pointer menu-icon" href="#reviews">Reviews</a></li>
+            <li><a onClick="toggleDropdownMenu()" class="cursor-pointer menu-icon" href="#packages">Packages</a></li>
+            <li><a onClick="toggleDropdownMenu()" class="cursor-pointer menu-icon" href="#faqs">FAQ's</a></li>
+            <li><a onClick="toggleDropdownMenu()" class="cursor-pointer menu-icon" href="#contact-us">Contact Us</a></li>
           </ul>
-        <div/>
+        </div>
         <script>
           function toggleDropdownMenu () {
             let dropdownButton = document.querySelector('#dropdown');
@@ -100,8 +100,8 @@
       </p>
     </div>
     <!-- Our Facilities Section -->
-    <div>
-      <div class="mt-[120px]">
+    <div id="our-facilities">
+      <div class="pt-[120px]">
         <p
           class="text-center font-Pridi font-semibold text-[28px] md:text-[32px] leading-7 tracking-wider mb-1"
         >
@@ -220,7 +220,7 @@
               Personalised Training
             </p>
             <p
-              class="text-center xl:text-left font-QuattrocentoSans mt-2 mb-7 max-w-[336px] xl:max-w-[272px] "
+              class="text-center xl:text-left font-QuattrocentoSans mt-2 pb-7 max-w-[336px] xl:max-w-[272px] "
             >
               Whether you're a beginner or a seasoned pro, we tailor our
               training programmes to meet your individual needs and goals.
@@ -231,7 +231,7 @@
       </div>
     </div>
     <!-- About Us Section -->
-    <div class="md:flex md:justify-center flex justify-center  md:mt-20">
+    <div class="md:flex md:justify-center flex justify-center  md:pt-20" id="about-us">
       <div class="flex flex-col md:flex-row md:justify-between md:items-center md:w-full md:max-w-[848px] mx-7  xl:mr-[300px]">
         <!-- Guy Punching Bag Image Section -->
         <div class="flex flex-col justify-center items-center mt-20 md:hidden">
@@ -288,7 +288,7 @@
   </div>
 
     <!-- What Others Have To Say Section -->
-    <div class="flex flex-col justify-center items-center mt-[120px] px-7">
+    <div class="flex flex-col justify-center items-center pt-[120px] px-7" id="reviews">
       <p
         class="text-center font-Pridi font-semibold text-[28px] leading-7 tracking-wider"
       >
@@ -343,11 +343,11 @@
       </div>
     </div>
     <!-- Boxing Gloves Image Section -->
-    <div class="flex flex-col justify-center items-center mt-[120px] md:hidden">
-      <img src="./public/images/boxing-gloves.png" alt="Two boxing gloves on the floor" class="max-w-full h-auto"/>
+    <div class="flex flex-col justify-center items-center mt-[120px] " id="faqs">
+      <img src="./public/images/boxing-gloves.png" alt="Two boxing gloves on the floor" class="max-w-full h-auto md:hidden"/>
     </div>
     <!-- FAQ's Section -->
-    <div class="flex flex-col justify-center items-center mt-14  xl:flex-row xl:mt-32">
+    <div class="flex flex-col justify-center items-center mt-14  xl:flex-row xl:mt-32" >
       <img class="hidden xl:block" src="./public/images/desktop-glove.png" alt="Two boxing gloves on the floor" class="max-w-full h-auto">
       <div class="xl:max-w-[512px] xl:ml-[80px]">
         <p
@@ -415,7 +415,7 @@
       </div>
     </div>
     <!-- None mobile view image -->
-    <div class="flex justify-center items-center w-full px-[88px] pt-16">
+    <div class="flex justify-center items-center w-full px-[88px] pt-16" id="packages">
       <img src="./public/images/none-mobile-glove.png" alt="Boxing glove on the floor" class="hidden md:block xl:hidden">
     </div>
     <!-- Our Packages Section -->
@@ -489,6 +489,7 @@
             </p>
             <button
               class="mt-5 py-4 px-32 font-normal text-white bg-knockout-lighter-brown rounded-lg leading-4 font-test font-QuattrocentoSans lg:px-24 xl:px-32"
+              id="contact-us"  
             >
               Join now
             </button>
@@ -497,7 +498,7 @@
       </div>
     </div>
     <!-- Image of weighted bags and contact us section -->
-    <div class="flex w-full justify-center md:mt-10">
+    <div class="flex w-full justify-center md:pt-10 px-7" >
       <div class="px-7 md:bg-[url('/public/images/medium-contact-us.png')] bg-no-repeat bg-center md:w-[848px] md:flex md:justify-start md:overflow-hidden rounded-lg md:py-4 xl:bg-[url('/public/images/desktop-contact-us.png')] xl:w-[1136px]">
         <div class="flex flex-col justify-center items-center mt-40 md:mt-0 mb-16">
           <img
