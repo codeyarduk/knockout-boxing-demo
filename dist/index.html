@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="overflow-x-hidden scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Knockout Boxing</title>
 
     <link rel="icon" type="image/svg+xml" href="/assets/favicon-VigQgt7T.png" />
-    <link rel="stylesheet" crossorigin href="/assets/index-IQ9dYz8J.css">
+    <link rel="stylesheet" crossorigin href="/assets/index-W4xhX_Gu.css">
   </head>
   <body id="top-of-page" class="overflow-x-hidden h-full max-h-full">
+  <div class="overflow-x-hidden relative">
     <!-- Header Section -->
     <header
-      class="flex flex-row justify-center items-center bg-white py-6 px-7 fixed w-full z-10 "
+      class="flex flex-row justify-center items-center bg-white py-6 px-7 fixed w-full z-10 xl:py-9"
     >
       <div class="flex flex-row justify-between items-center w-full md:max-w-[848px] xl:max-w-[1136px]">
         <div>
@@ -21,19 +22,19 @@
             >Knockout Boxing</a
           >
         </div>
-        <div onClick="toggleDropdownMenu()">
-            <img src="data:image/svg+xml,%3csvg%20width='34'%20height='18'%20viewBox='0%200%2034%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%201H33'%20stroke='%231D1107'%20stroke-width='1.6'%20stroke-linecap='round'/%3e%3cpath%20d='M1%209H33'%20stroke='%231D1107'%20stroke-width='1.6'%20stroke-linecap='round'/%3e%3cpath%20d='M1%2017H33'%20stroke='%231D1107'%20stroke-width='1.6'%20stroke-linecap='round'/%3e%3c/svg%3e" class="cursor-pointer menu-icon"/>
+        <div onClick="toggleDropdownMenu()" class="xl:hidden">
+            <img src="data:image/svg+xml,%3csvg%20width='34'%20height='18'%20viewBox='0%200%2034%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M1%201H33'%20stroke='%231D1107'%20stroke-width='1.6'%20stroke-linecap='round'/%3e%3cpath%20d='M1%209H33'%20stroke='%231D1107'%20stroke-width='1.6'%20stroke-linecap='round'/%3e%3cpath%20d='M1%2017H33'%20stroke='%231D1107'%20stroke-width='1.6'%20stroke-linecap='round'/%3e%3c/svg%3e" class="cursor-pointer menu-icon xl:hidden" loading="lazy"/>
         </div>
-        <div class="bg-white shadow-md rounded-md fixed hidden left-0 top-12" id="dropdown">
-          <ul class="flex justify-between flex-col text-black p-4 h-96 w-72 text-center w-dvw">
-            <li>About Us</li>
-            <li>Our Facilites</li>
-            <li>Reviews</li>
-            <li>Packages</li>
-            <li>FAQ's</li>
-            <li>Contact Us</li>
+        <div class="bg-white shadow-md rounded-md fixed hidden left-0 top-12 xl:flex xl:bg-transparent xl:shadow-none xl:top-[initial] xl:left-[initial] xl:relative" id="dropdown">
+          <ul class="flex justify-between flex-col text-black p-4 h-96 text-center w-dvw xl:flex-row xl:h-[initial] xl:p-0 xl:w-[635px] xl:text-[18px] font-QuattrocentoSans">
+            <li><a onClick="toggleDropdownMenu()" class="cursor-pointer menu-icon" href="#about-us">About Us</a></li>
+            <li><a onClick="toggleDropdownMenu()" class="cursor-pointer menu-icon" href="#our-facilities">Our Facilities</a></li>
+            <li><a onClick="toggleDropdownMenu()" class="cursor-pointer menu-icon" href="#reviews">Reviews</a></li>
+            <li><a onClick="toggleDropdownMenu()" class="cursor-pointer menu-icon" href="#packages">Packages</a></li>
+            <li><a onClick="toggleDropdownMenu()" class="cursor-pointer menu-icon" href="#faqs">FAQ's</a></li>
+            <li><a onClick="toggleDropdownMenu()" class="cursor-pointer menu-icon" href="#contact-us">Contact Us</a></li>
           </ul>
-        <div/>
+        </div>
         <script>
           function toggleDropdownMenu () {
             let dropdownButton = document.querySelector('#dropdown');
@@ -45,7 +46,7 @@
     <!-- Hero Section --> 
     <div class="w-full h-10"></div>
     <div class="flex justify-center w-full pt-28 pb-10 bg-knockout-light-brown lg:hidden">
-      <img class="w-48" src="/assets/favicon-VigQgt7T.png" alt="Knockout Boxing Logo" />
+      <img class="w-48" src="/assets/favicon-VigQgt7T.png" alt="Knockout Boxing Logo" loading="lazy"/>
     </div>
     <!-- Unleash Your Inner Fighter Section -->
     <div class="flex justify-center lg:items-center">
@@ -71,11 +72,11 @@
             Join now
           </button>
         </div>
-        <div class="hidden lg:block w-[384px] xl:hidden">
-          <img src="/assets/hero-circle-medium-oFJv07bN.png" class="pl-0  absolute lg:block float-right z-1 min-w-[686px] pr-10">
+        <div class="hidden lg:block w-[384px] xl:hidden overflow-hidden">
+          <img src="/assets/hero-circle-medium-oFJv07bN.png" class="pl-0  overflow-hidden absolute lg:block float-right z-1 min-w-[686px] pr-10" loading="lazy">
         </div>
-        <div class="hidden w-[584px] xl:block">
-          <img src="/assets/hero-circle-3_xVdXeR.png" class="pl-0 hidden absolute lg:block float-right z-1 min-w-[686px] pr-10">
+        <div class="hidden w-[584px] xl:block overflow-hidden">
+          <img src="/assets/hero-circle-3_xVdXeR.png" class="pl-0 hidden overflow-hidden absolute lg:block float-right z-1 min-w-[686px] pr-10" loading="lazy">
         </div>
       </div>
     </div>
@@ -86,7 +87,7 @@
       <p
         class="text-center font-Pridi font-semibold text-[28px] leading-7 md:leading[32px] md:text-[32px]"
       >
-        I’ve never boxed before can I join?
+        I’ve never boxed before, can I join?
       </p>
       <p
         class="text-center font-QuattrocentoSans mt-4 max-w-2xl xl:max-w-[1000px] md:px-1.25rem xl:text-[24px] md:text-[18px]"
@@ -94,13 +95,13 @@
         The short answer is <span class="font-semibold">YES!</span> At Knockout
         Boxing, our doors are open to everyone. Whether you're a complete
         beginner, a fitness enthusiast looking for a new challenge, or an
-        experienced fighter aiming for the championships, our training programs
+        experienced fighter aiming for the championships, our training programmes
         cater to all levels of expertise.
       </p>
     </div>
     <!-- Our Facilities Section -->
-    <div>
-      <div class="mt-[120px]">
+    <div id="our-facilities">
+      <div class="pt-[120px]">
         <p
           class="text-center font-Pridi font-semibold text-[28px] md:text-[32px] leading-7 tracking-wider mb-1"
         >
@@ -183,7 +184,7 @@
             <p
               class="text-xl xl:text-left font-QuattrocentoSans text-center font-bold"
             >
-              State-of-the-Art Facilities
+              State-of-the-art Facilities
             </p>
             <p
               class="text-center xl:text-left font-QuattrocentoSans mt-2 mb-7 max-w-[336px] xl:max-w-[272px]"
@@ -219,10 +220,10 @@
               Personalised Training
             </p>
             <p
-              class="text-center xl:text-left font-QuattrocentoSans mt-2 mb-7 max-w-[336px] xl:max-w-[272px] "
+              class="text-center xl:text-left font-QuattrocentoSans mt-2 pb-7 max-w-[336px] xl:max-w-[272px] "
             >
               Whether you're a beginner or a seasoned pro, we tailor our
-              training programs to meet your individual needs and goals.
+              training programmes to meet your individual needs and goals.
             </p>
           </div>
         </div>
@@ -230,13 +231,14 @@
       </div>
     </div>
     <!-- About Us Section -->
-    <div class="md:flex md:justify-center flex justify-center  md:mt-20">
+    <div class="md:flex md:justify-center flex justify-center  md:pt-20" id="about-us">
       <div class="flex flex-col md:flex-row md:justify-between md:items-center md:w-full md:max-w-[848px] mx-7  xl:mr-[300px]">
         <!-- Guy Punching Bag Image Section -->
         <div class="flex flex-col justify-center items-center mt-20 md:hidden">
           <img
             src="/assets/man-hitting-bag-xw8_Pr0j.png"
             alt="Man hitting heavy bag with boxing glove"
+            loading="lazy"
           />
         </div>
 
@@ -252,7 +254,7 @@
           <p
             class=" pt-4 font-QuattrocentoSans leading-[1.35rem] md:text-[18px] md:font-normal md:max-w-[384px] md:leading-[21.6px] font-light text-knockout-medium-dark-brown xl:max-w-2xl text-center md:text-left xl:w-[528px]"
           >
-            Knockout Boxing is more than just a gym; we're a family. Our passion
+            Knockout Boxing is more than just a gym. We're a family. Our passion
             for boxing and fitness drives us to provide an exceptional training
             environment where athletes of all levels can thrive. With years of
             experience in the boxing industry, our coaches are dedicated to
@@ -272,6 +274,7 @@
             src="/assets/man-hitting-bag-xw8_Pr0j.png"
             alt="Man hitting heavy bag with boxing glove"
             class="min-w-[384px] w-[384px] h-[384px] min-h-[384px]"
+            loading="lazy"
           />
         </div>
           <div class="hidden xl:block  ">
@@ -279,6 +282,7 @@
               src="/assets/man-hitting-bag-desktop-ZDKN8wCM.png"
               alt="Man hitting heavy bag with boxing glove"
               class="min-w-[528px] w-[528px] h-[427px] min-h-[427px] "
+              loading="lazy"
           />
         </div>
 
@@ -287,7 +291,7 @@
   </div>
 
     <!-- What Others Have To Say Section -->
-    <div class="flex flex-col justify-center items-center mt-[120px] px-7">
+    <div class="flex flex-col justify-center items-center pt-[120px] px-7" id="reviews">
       <p
         class="text-center font-Pridi font-semibold text-[28px] leading-7 tracking-wider"
       >
@@ -299,6 +303,7 @@
             class="w-[104px] xl:w-36"
             src="/assets/review-1-desktop-Fny4YDOQ.png"
             alt="Picture of the reviewer"
+            loading="lazy"
           />
           <p class="text-xl font-QuattrocentoSans text-center font-bold pt-6 lg:text-[22px]">
             John D.
@@ -314,6 +319,7 @@
             class="w-[104px] xl:w-36"
             src="/assets/review-2-desktop-r-V9hi0u.png"
             alt="Picture of the reviewer"
+            loading="lazy"
           />
           <p class="text-xl font-QuattrocentoSans text-center font-bold pt-6 lg:text-[22px]">
             Sarah R.
@@ -329,6 +335,7 @@
             class="w-[104px] xl:w-36"
             src="/assets/review-3-desktop-pD76TMDM.png"
             alt="Picture of the reviewer"
+            loading="lazy"
           />
           <p class="text-xl font-QuattrocentoSans text-center font-bold pt-6 lg:text-[22px]">
             Mike S.
@@ -342,12 +349,12 @@
       </div>
     </div>
     <!-- Boxing Gloves Image Section -->
-    <div class="flex flex-col justify-center items-center mt-[120px] md:hidden">
-      <img src="/assets/boxing-gloves-Aca0XIrQ.png" alt="Two boxing gloves on the floor" class="max-w-full h-auto"/>
+    <div class="flex flex-col justify-center items-center mt-[120px] " id="faqs">
+      <img src="/assets/boxing-gloves-Aca0XIrQ.png" alt="Two boxing gloves on the floor" class="max-w-full h-auto md:hidden" loading="lazy"/>
     </div>
     <!-- FAQ's Section -->
-    <div class="flex flex-col justify-center items-center mt-14  xl:flex-row xl:mt-32">
-      <img class="hidden xl:block" src="/assets/desktop-glove-fd8iczeE.png" alt="Two boxing gloves on the floor" class="max-w-full h-auto">
+    <div class="flex flex-col justify-center items-center mt-14  xl:flex-row xl:mt-32" >
+      <img class="hidden xl:block" src="/assets/desktop-glove-fd8iczeE.png" alt="Two boxing gloves on the floor" class="max-w-full h-auto" loading="lazy">
       <div class="xl:max-w-[512px] xl:ml-[80px]">
         <p
           class="text-center font-Pridi font-semibold text-[28px] leading-7 tracking-wider mb-12 md:pt-16 xl:text-start xl:mb-6 xl:pt-0"
@@ -370,7 +377,7 @@
               What should I bring to my first class?
             </p>
             <p class="text-center font-QuattrocentoSans mb-12 max-w-[336px] md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
-              Wear comfy workout clothes and sneakers, bring water, gloves and wraps
+              Wear comfy workout clothes and trainers, bring water, gloves and wraps
               are available or for purchase.
             </p>
           </div>
@@ -378,11 +385,10 @@
         <div class="flex flex-col md:flex-row md:justify-between md:w-[656px] xl:flex-col xl:items-start">
           <div>
             <p class="text-[18px] font-QuattrocentoSans text-center font-bold xl:max-w-lg xl:w-full xl:text-start">
-              What should I bring to my first class?
+              What level of fitness should I be at before joining?
             </p>
             <p class="text-center font-QuattrocentoSans mb-12 max-w-[336px] md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
-              Wear comfy workout clothes and sneakers, bring water, gloves and wraps
-              are available or for purchase.
+              You don't need to be at any level of fitness, our coaches can train you regardless of your fitness level. It's our job to get you fit.
             </p>
           </div>
           <div>
@@ -390,7 +396,7 @@
               Is there an age limit?
             </p>
             <p class="text-center font-QuattrocentoSans mb-12 max-w-[336px] md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-6">
-              All ages are welcome; we have programs for kids, teens, and adults.
+              All ages are welcome. We have programmes for kids, teens, and adults.
             </p>
           </div>
         </div>
@@ -408,15 +414,15 @@
               How do I sign up?
             </p>
             <p class="text-center font-QuattrocentoSans mb-12 max-w-[336px] md:w-72 xl:max-w-lg xl:w-full xl:text-start xl:mb-0">
-              Contact us to book a visit or call where you can join the gym.
+              Contact us to book a visit or call us to find out where you can join the gym.
             </p>
           </div>
         </div>
       </div>
     </div>
     <!-- None mobile view image -->
-    <div class="flex justify-center items-center w-full px-[88px] pt-16">
-      <img src="/assets/none-mobile-glove-VrHOETef.png" alt="Boxing glove on the floor" class="hidden md:block xl:hidden">
+    <div class="flex justify-center items-center w-full px-[88px] pt-16" id="packages">
+      <img src="/assets/none-mobile-glove-VrHOETef.png" alt="Boxing glove on the floor" class="hidden md:block xl:hidden" loading="lazy">
     </div>
     <!-- Our Packages Section -->
     <div class="flex flex-col justify-center px-7">
@@ -427,7 +433,7 @@
           Our Packages
         </p>
         <p class="text-center font-QuattrocentoSans mb-12 max-w-md lg:max-w-full xl:text-lg xl:mb-20">
-          Contact us in the form below to book a call or visit to where will
+          Contact us in the form below to book a call or visit us where we
           will help you join Knockout gym
         </p>
       </div>
@@ -448,7 +454,7 @@
               assessment with a trainer.
             </p>
             <button
-              class="mt-5 py-4 px-32 font-normal text-white bg-[#DF3C40] rounded-lg leading-4 font-test font-QuattrocentoSans lg:px-24 xl:px-32"
+              class="mt-5 py-4 px-32 font-normal text-white bg-knockout-lighter-brown rounded-lg leading-4 font-test font-QuattrocentoSans lg:px-24 xl:px-32"
             >
               Join now
             </button>
@@ -464,11 +470,11 @@
             </p>
             <p class="text-center font-QuattrocentoSans max-w-md lg:w-[240px]">
               Take your skills to the next level with our 6-month membership,
-              including one-on-one sessions, personalised training programs, and
+              including one-on-one sessions, personalised training programmes, and
               access to exclusive workshops.
             </p>
             <button
-              class="mt-5 py-4 px-32 font-normal text-white bg-[#DF3C40] rounded-lg leading-4 font-test font-QuattrocentoSans lg:px-24 xl:px-32"
+              class="mt-5 py-4 px-32 font-normal text-white bg-knockout-lighter-brown rounded-lg leading-4 font-test font-QuattrocentoSans lg:px-24 xl:px-32"
             >
               Join now
             </button>
@@ -488,7 +494,8 @@
               priority access to workshops and events.
             </p>
             <button
-              class="mt-5 py-4 px-32 font-normal text-white bg-[#DF3C40] rounded-lg leading-4 font-test font-QuattrocentoSans lg:px-24 xl:px-32"
+              class="mt-5 py-4 px-32 font-normal text-white bg-knockout-lighter-brown rounded-lg leading-4 font-test font-QuattrocentoSans lg:px-24 xl:px-32"
+              id="contact-us"  
             >
               Join now
             </button>
@@ -497,13 +504,14 @@
       </div>
     </div>
     <!-- Image of weighted bags and contact us section -->
-    <div class="flex w-full justify-center md:mt-10">
+    <div class="flex w-full justify-center md:pt-10 px-7" >
       <div class="px-7 md:bg-[url('/public/images/medium-contact-us.png')] bg-no-repeat bg-center md:w-[848px] md:flex md:justify-start md:overflow-hidden rounded-lg md:py-4 xl:bg-[url('/public/images/desktop-contact-us.png')] xl:w-[1136px]">
         <div class="flex flex-col justify-center items-center mt-40 md:mt-0 mb-16">
           <img
             class="rounded-md h-[336px] md:hidden"
             src="/assets/weighted-bags-X6BusF4H.png"
             alt="Man hitting heavy bag with boxing glove"
+            loading="lazy"
           />
         </div>
         <div class="md:w-fit md:py-10 md:ml-4">
@@ -564,14 +572,14 @@
           <p>Sun: Closed</p>
         </div>
 
-        <div class="pt-16 font-light text-[16px] leading-[18px] md:pt-0">
+        <div class="flex flex-col pt-16 font-light text-[16px] leading-[18px] md:pt-0">
           <p class="text-[18px] font-semibold pb-2">Quick Links</p>
-          <p>Our facilities</p>
-          <p>About us</p>
-          <p>Reviews</p>
-          <p>FAQ's</p>
-          <p>Our Packages</p>
-          <p>Contact us</p>
+          <a class="cursor-pointer menu-icon" href="#about-us">About Us</a>
+          <a class="cursor-pointer menu-icon" href="#our-facilities">Our Facilities</a>
+          <a class="cursor-pointer menu-icon" href="#reviews">Reviews</a>
+          <a class="cursor-pointer menu-icon" href="#packages">Packages</a>
+          <a class="cursor-pointer menu-icon" href="#faqs">FAQ's</a>
+          <a class="cursor-pointer menu-icon" href="#contact-us">Contact Us</a>
         </div>
 
         <div class="pt-16 font-light text-[16px] leading-[18px] md:pt-0">
@@ -584,6 +592,7 @@
           <p class="md:w-28 xl:w-[272px]">68 North Street London WC19 4DZ</p>
         </div>
       </div>
+    </div>
     </div>
   </body>
 </html>
