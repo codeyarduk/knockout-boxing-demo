@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="overflow-x-hidden">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body id="top-of-page" class="overflow-x-hidden h-full max-h-full">
+  <div class="overflow-x-hidden relative">
     <!-- Header Section -->
     <header
-      class="flex flex-row justify-center items-center bg-white py-6 px-7 fixed w-full z-10 "
+      class="flex flex-row justify-center items-center bg-white py-6 px-7 fixed w-full z-10"
     >
       <div class="flex flex-row justify-between items-center w-full md:max-w-[848px] xl:max-w-[1136px]">
         <div>
@@ -71,11 +72,11 @@
             Join now
           </button>
         </div>
-        <div class="hidden lg:block w-[384px] xl:hidden">
-          <img src="./public/images/hero-circle-medium.png" class="pl-0  absolute lg:block float-right z-1 min-w-[686px] pr-10">
+        <div class="hidden lg:block w-[384px] xl:hidden overflow-hidden">
+          <img src="./public/images/hero-circle-medium.png" class="pl-0  overflow-hidden absolute lg:block float-right z-1 min-w-[686px] pr-10">
         </div>
-        <div class="hidden w-[584px] xl:block">
-          <img src="./public/images/hero-circle.png" class="pl-0 hidden absolute lg:block float-right z-1 min-w-[686px] pr-10">
+        <div class="hidden w-[584px] xl:block overflow-hidden">
+          <img src="./public/images/hero-circle.png" class="pl-0 hidden overflow-hidden absolute lg:block float-right z-1 min-w-[686px] pr-10">
         </div>
       </div>
     </div>
@@ -583,6 +584,7 @@
           <p class="md:w-28 xl:w-[272px]">68 North Street London WC19 4DZ</p>
         </div>
       </div>
+    </div>
     </div>
   </body>
 </html>
